@@ -43,15 +43,15 @@ public class ExamenHTest {
         assertEquals("Ha cambiado la cantidad de elementos de la colección", 5, coleccion.size());
         Iterator<CharSequence> iter = coleccion.iterator();
         CharSequence cs = iter.next();
-        assertEquals("Resultado no es el esperado",true, cs.equals("Roma") && cs instanceof String );
+        assertEquals("Resultado no es el esperado",true, cs.toString().equals("Roma") && cs instanceof String );
         cs = iter.next();
-        assertEquals("Resultado no es el esperado",true, cs.equals("Madrid") && cs instanceof StringBuffer);
+        assertEquals("Resultado no es el esperado",true, cs.toString().equals("Madrid") && cs instanceof StringBuffer);
         cs = iter.next();
-        assertEquals("Resultado no es el esperado",true, cs.equals("Berlín@@") && cs instanceof StringBuilder );
+        assertEquals("Resultado no es el esperado",true, cs.toString().equals("Berlín@@") && cs instanceof StringBuilder );
         cs = iter.next();
-        assertEquals("Resultado no es el esperado",true, cs.equals("fin") && cs instanceof StringBuilder );
+        assertEquals("Resultado no es el esperado",true, cs.toString().equals("fin") && cs instanceof StringBuilder );
         cs = iter.next();
-        assertEquals("Resultado no es el esperado",true, cs.equals("Lisboa") && cs instanceof StringBuilder );
+        assertEquals("Resultado no es el esperado",true, cs.toString().equals("Lisboa") && cs instanceof StringBuilder );
 
     }
 
