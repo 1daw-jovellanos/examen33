@@ -9,6 +9,10 @@ public class Ordenador {
         this.memoria = memoria;
         this.modeloCpu = modeloCpu;
     }
+    
+    protected Ordenador() {
+        
+    }
 
     public String getModeloCpu() {
         return modeloCpu;
